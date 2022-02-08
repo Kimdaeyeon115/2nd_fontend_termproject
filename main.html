@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>SNS 홈페이지</title>
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <div id="container">
+            <header>
+                <div id="logo">
+                <a href="main.html"><img src="images/Dlogo.png" alt="sns홈페이지" width="107px"></a>
+                    </div>
+                    <nav>
+                        <div>
+                        <ul id="topMenu">
+                            <li><a href="post.html"><img id="round_img" src="images/post.PNG" alt="게시판"></a></li>
+                            <!--<li><a href="#">게시판</a></li> -->
+                            <li><a href="./message.html"><img id="round_img" src="images/messenger.png" alt="메신저"></a></li>
+                            <!-- <li><a href="#">메신저</a></li> -->
+                            <li><a href="./media.html"><img id="round_img" src="images/media.PNG" alt="미디어"></a></li>                           
+                            <li><a href="./friend.html"><img id="round_img" src="images/media1.PNG" alt="친구"></a></li>  
+                        </ul>
+                        </div>
+                        <div>
+                        <ul>
+                        <li class="top_login"><a href="./login.html"><img id="round_img" src="./images/login2.PNG" alt="로그인"></a></li>
+                        </ul>
+                        </div>
+                    </nav>
+            </header>
+            <main id="main_main">
+                <div>
+                    <h2>폰트 인기 투표</h2><br>
+                    <section id="box1">
+                        <h3>'경기바탕' 체</h3>
+                        <img id="main_img" src="./images/box1.PNG" alt="로마여행사진" width="400px" height="300px" ><br><br><br><br><br><br><br>
+                        <b>현대적인 스타일과 고대의 모습을 지닌 영원의 도시가 계속해서 빛나고 있습니다</b><br><br><br><br><br><br><br>
+                        <p>구세계의 경이로움과 현대적인 즐거움이 완벽하게 어우러진 덕분에 무질서하게 뻗은 도시 로마는 세계에서
+                         가장 중요한 방문지 중 하나로 남아 있습니다. 콜로세움 유적과 로마를 상징하는 분수, 
+                         손에 젤라토를 들고 로마의 자갈길을 돌아다니는 관광객. 이 모든 것이 손짓하여 부릅니다. 
+                         로마는 둘러봐야 할 장소가 도처에 많은 구불구불하고 인상적인 도시입니다.</p>
+                    </section>
+                    <section id="box2">
+                        <h3>'twaysky' 체</h3>
+                        <img id="main_img" src="./images/box2.PNG" alt="발리여행사진" width="400px" height="300px" > <br><br><br><br><br><br>
+                        <b>해변을 즐기는 사람, 
+                            건강을 중요하게 여기는 사람, 문화적인 호기심이 많은 사람을 위한 열대 안식처입니다.</b><br><br><br>
+                        <p>발리만큼 여행자들을 매료시킨 섬은 없습니다. 면적이 하와이 빅아일랜드의 절반도 되지 않지만,
+                             그 공간에 발리는 셀 수 없는 모험을 알차게 담아냈습니다. 발리 남서 해안을 따라 눈부신 해변이 태양을 즐기는 사람들과 서퍼들을 향해 손짓하고,
+                              고대의 사원과 웰니스를 위한 공간들은 여행자들을 우붓으로 불러들입니다. 발리는 즐거움을 찾는 사람, 
+                              휴식이 필요한 사람, 생태관광객 누구든지 즐길 거리를 찾을 수 있는 곳으로 스미냑과 쿠타의 멋진 나이트클럽부터 누사두아의 절벽 위에 지어진 초호화 호텔, 
+                            발리 북부의 자연 그대로인 정글과 화산 풍경까지 다양한 즐길 거리가 준비되어 있습니다.</p>
+                    </section>
+                    <section id="box3">
+                        <h3>'KOTRAHOPE' 체</h3>
+                        <img id="main_img" src="./images/box3.PNG" alt="제주여행사진" width="400px" height="300px" ><br><br><br><br><br><br>
+                        <b>제주에 관한 정보</b><br><br><br><br><br><br><br>
+                        <p>제주는 독특한 관광명소로 떠오르고 있는 인기 있는 관광지입니다. 제주는 로맨틱한 일출과 일몰, 온화한 기후, 
+                            아름다운 모래 해변으로 유명한 허니문 여행지입니다. 활동적인 여행자라면, 
+                            한국의 최고봉 한라산의 백록담 정상을 오르는 하이킹에 도전해 보시기 바랍니다. 
+                            해녀와 돌하르방으로 친숙한 제주는 많은 여행자의 발길을 향하게 만드는 인기 여행지입니다.</p>
+                    </section>
+                </div>
+                <div id="main_vote">
+                    <p>어느 폰트가 가장 마음에 들었나요?</p><br>
+                    <label for="경기바탕"  title="" id="box1">경기바탕 <input type="checkbox" id="경기바탕"></label><br>
+                    <label for="twaysky"  title="" id="box2">twaysky <input type="checkbox" id="twaysky"></label><br>
+                    <label for="KOTRAHOPE"  title="" id="box3">KOTRAHOPE <input type="checkbox" id="KOTRAHOPE"></label> 
+                    <input type="submit" id="vote_submit">
+                </div>
+            </main>
+            <aside>
+                <div id="up_button">
+                    <a href="#"><img src="./images/Dlogo.png" alt="최상위로버튼"  width="50"></a>
+                </div>
+            </aside>
+            <footer>
+                <div id="bottom_menu">
+                    <ul>
+                        <li><a href="#">회사 소개</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="./terms.html">이용약관</a></li>
+                        <li><a href="./story.html">개발자정보</a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

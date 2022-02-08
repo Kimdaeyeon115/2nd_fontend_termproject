@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>회원가입 페이지</title>
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+<body>
+    <div id="container">
+        <header>
+            <div id="logo">
+                <a href="./main.html"><img src="./images/logo.png" alt="홈페이지"></a>
+            </div>
+            <nav>
+                <div>
+                    <ul id="top_login">
+                        <li class="top_login"><a href="./login.html"><img id="round_img" src="./images/login2.PNG" alt="로그인"></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main id="main_join">
+            <fieldset id="margin_login">
+                <div>
+                <h1>가입하기</h1>
+                <a href="login.html"><img id="canselbutton"src="images/canselbutton.PNG" alt="취소버튼" ></a>
+                <p id="join_p">빠르고 쉽습니다<div class=""></p>
+                    </div>
+                <hr>
+         <div>  
+           <form id="login_div" action="#" method="POST" enctype="multipart/form-data">
+               <div>
+                   <p class="center" id="join_p">
+                       <label for="profile">프로필 사진 &centerdot; </label>
+                   <input type="file" name="photo" id="photo">
+                   </p>
+               </div>
+               <div>
+                   <p class="center" id="join_p">
+                   <label for="email">이메일 &centerdot;</label>
+                   <input type="email" id="email" name="email" maxlength="20" placeholder="이메일">
+                   </p>
+               </div>
+               <div>
+                   <p class="center" id="join_p">
+                   <label for="email">비밀번호 &centerdot;</label>
+                   <input type="password" name="pass" id="pass1" placeholder="비밀번호" maxlength="11">
+                   <input type="password" id="pass2" placeholder="비밀번호 확인" maxlength="11">
+                   </p>
+               </div>
+               <div>
+                   <p class="center" id="join_p">
+                   <label for="name">이름 &centerdot;</label>
+                   <input type="text" id="name" name="name" placeholder="이름을 입력하세요.">
+                   </p>
+               </div>
+               <div>
+                   <p class="center" id="join_p">생일 &centerdot;
+                   <p class="center" id="join_p">
+                   <select name="year" id="year" size="" >
+                       <option value="서버로 넘길 년도" selected>2021</option>
+                       <option value="서버로 넘길 년도" >2020</option>
+                       <option value="서버로 넘길 년도" >2019</option>
+                   </select>
+                   <select name="" id="">
+                       <option value="" selected>11월</option>
+                       <option value="" >10월</option>
+                   </select>
+                   <select name="" id="">
+                       <option value="" selected>20</option>
+                       <option value="" >19</option>
+                   </select>
+                   </p>
+               </div>
+               <!-- 생일과 성별은 각각 p와 lable로 다르게 하였으니 나중에 수정할것-->
+               <div>
+                   <p class="center" id="join_p">
+                   <label >성별 &centerdot;</label><br>
+                   <input type="radio" id="man" name="gender" value="man">
+                   <label for="man">남자</label>
+                   <input type="radio" id="woman" name="gender" value="woman">
+                   <label for="woman">여자</label>
+                   </p>
+               </div>
+               <div>
+                   <input type="hidden" name="agree_terms" id="agree_terms">
+                   <input type="hidden" name="user_info_agree" id="user_info_agree">
+                   <input type="hidden" name="maeketiong_sms_agree" id="maeketiong_sms_agree">
+                   <input type="hidden" name="maeketiong_email_agree" id="maeketiong_email_agree">
+                   <p class="italic" id="join_p">가입하기 버튼을 클릭하면 DAESNS의 <a href="terms.html">약관</a>, 
+                       데이터 정책 및 쿠키 정책에 동의하게 됩니다. 
+                       DAESNE으로부터 SMS 알림을 받을 수 있으며 알림은 언제든지 옵트 아웃할 수 있습니다.</p>
+                   <p class="center join">
+                   <a href="./main.html"><img id="round" src="./images/singup_button1.PNG" alt="가입하기"></a>
+                   </p>
+                   <p class="center join">
+                   <a href="./login.html" id="ada">이미 계정이 있으신가요?</a>
+                   </p>
+                   <!--<button type="submit" img="">가입하기</button> -->
+               </div>
+           </form>
+          </div>
+          </fieldset>   
+        </main>
+        <footer>
+            <div id="bottom_menu">
+                <ul>
+                    <li><a href="#">회사 소개</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="./terms.html">이용약관</a></li>
+                    <li><a href="#">개발자정보</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
